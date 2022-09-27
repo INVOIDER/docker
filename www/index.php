@@ -1,22 +1,14 @@
 <html lang="en">
 <head>
-<title>Hello world page</title>
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+<title>Pr2 page</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Таблица пользователей данного продукта</h1>
-    <table>
-        <tr><th>Id</th><th>Name</th><th>Surname</th></tr>
-    <?php
-    $mysqli = new mysqli("data", "user", "password", "appDB");
-    $result = $mysqli->query("SELECT * FROM users");
-    foreach ($result as $row){
-        echo "<tr><td>{$row['ID']}</td><td>{$row['name']}</td><td>{$row['surname']}</td></tr>";
-    }
-    ?>
-    </table>
-    <?php
-    phpinfo();
-    ?>
+    <H1>Практическая работа №2</H1>
+    <ul>
+        <li><form action="drawer.php"><Button>Упражнение 1</Button></form></li>
+        <li><form action="sort.php"><Button>Упражнение 2</Button></form></li>
+        <li><form action="unix.php"><Button>Упражнение 3</Button></form></li>
+    </ul>
 </body>
 </html>
