@@ -1,0 +1,26 @@
+*{ /*Устанавливаем значения по умолчанию*/
+    margin: 0;
+    /*padding: 0;*/
+    color: white;
+    text-decoration: none;
+    font-family: 'Comfortaa', bold;
+}
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 2vh 3vw;
+    font-size: 1.2em;
+  }
+  .topnav :first-child{
+    padding: 0.5vh 3vw;
+  }
+
+  /*Подсветка элементов при наведении*/
+  .topnav a:not(:first-child):hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav .icon {
+    display: none;
+  }
